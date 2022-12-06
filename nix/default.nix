@@ -26,7 +26,7 @@
   enableXWayland ? true,
   hidpiXWayland ? true,
   legacyRenderer ? false,
-  nvidiaPatches ? false,
+  nvidiaPatches ? true,
   version ? "git",
 }: let
   assertXWayland = lib.assertMsg (hidpiXWayland -> enableXWayland) ''
